@@ -3,7 +3,8 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 
-import './index.css'
+import './reset.css'
+import './base.css'
 
 const TemplateWrapper = ({ children }) => (
   <div>
