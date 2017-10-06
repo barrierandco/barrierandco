@@ -2,7 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
+import { ThemeProvider } from 'styled-components'
 
+import settings from '../lib/settings'
 import './reset.css'
 import './base.css'
 
@@ -15,7 +17,9 @@ const TemplateWrapper = ({ children }) => (
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
-    {children()}
+    <ThemeProvider theme={settings}>
+      {children()}
+    </ThemeProvider>
   </div>
 )
 

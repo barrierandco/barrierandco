@@ -5,7 +5,9 @@ import styled from 'styled-components'
 const CellStyle = styled.div`
   margin: 0 auto;
   max-width: 700px;
-  text-align: ${props => props.center ? 'center' : 'left'};
+  @media screen and (min-width: 600px) {
+    text-align: ${props => props.center ? 'center' : 'left'};
+  }
 `
 
 class Cell extends React.Component {
