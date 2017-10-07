@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import portrait from '../assets/images/jw-portrait.png'
+import portrait from '../assets/images/jw-portrait.jpg'
 import signature from '../assets/images/jw-signature.png'
 
 const Container = styled.div`
@@ -46,7 +46,6 @@ const LetterContainer = styled.div`
 
 const LetterImage = styled.figure`
   display: block;
-  height: 350px;
   margin: 0;
   overflow: hidden;
   position: relative;
@@ -62,11 +61,11 @@ const LetterImage = styled.figure`
     color: inherit;
   }
   figcaption {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75) 80%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8) 80%, rgba(0, 0, 0, 0.9));
     bottom: 0;
     color: white;
     left: 0;
-    padding: 40px 20px 8px;
+    padding: 40px 20px 16px;
     position: absolute;
     right: 0;
     @media ${props => props.theme.breakpoint} {
@@ -79,12 +78,16 @@ const LetterImage = styled.figure`
     }
   }
   img {
-    border-radius: ${props => props.theme.borderRadius};
+    border-radius: ${props => props.theme.borderRadius} ${props => props.theme.borderRadius} 0 0;
     box-shadow: ${props => props.theme.boxShadow};
+    display: block;
     width: 100%;
+    @media ${props => props.theme.breakpoint} {
+      border-radius: ${props => props.theme.borderRadius};
+    }
   }
   p {
-    margin-bottom: 8px;
+    margin-bottom: 0;
   }
   small {
     font-family: 'Roboto', 'Helvetica Neue', Helvetica, sans-serif;
@@ -107,7 +110,7 @@ const Letter = props =>
       <figcaption>
         <p>
           <strong>John Wilson</strong>
-          <small>Designer & Developer • Principle of Barrier&nbsp;&amp;&nbsp;Co.</small>
+          <small>Principle of Barrier&nbsp;&amp;&nbsp;Co. &mdash; Designer&nbsp;&amp;&nbsp;Developer</small>
         </p>
         <p><small>Photo by <a href="http://www.patrickmichaelchin.com">Patrick Michael Chin</a></small></p>
       </figcaption>
