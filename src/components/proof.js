@@ -6,14 +6,20 @@ import mideo from '../assets/images/proof-mideo.png'
 import Cell from './cell'
 
 const ProofContainer = styled.div`
-  margin: 176px 0 80px;
+  margin: 40px 0 0;
+  @media ${props => props.theme.breakpoint} {
+    margin: 176px 0 80px;
+  }
 `
 
 const ProofImage = styled.figure`
-  float: left;
-  margin: ${props => props.left ? '40px -10% 0 0' : '120px 0 0 0'};
+  margin: 24px 0;
   position: relative;
-  width: 55%;
+  @media ${props => props.theme.breakpoint} {
+    float: left;
+    margin: ${props => props.left ? '40px -10% 0 0' : '120px 0 0 0'};
+    width: 55%;
+  }
   &:hover {
     z-index: 10;
   }
@@ -34,8 +40,10 @@ const ProofImage = styled.figure`
   }
   small {
     font-family: 'Roboto', 'Helvetica Neue', Helvetica, sans-serif;
-    font-size: 0.6rem;
     opacity: 0.5;
+    @media ${props => props.theme.breakpoint} {
+      font-size: 0.6rem;
+    }
   }
   strong {
     display: block;
