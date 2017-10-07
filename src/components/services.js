@@ -10,26 +10,30 @@ const ServicesCard = styled.div`
   box-shadow: ${props => props.theme.boxShadow};
   flex-grow: ${props => props.left || props.right ? '0' : '1'};
   margin-bottom: 24px;
-  padding: 24px;
+  order: ${props => props.left || props.right ? '1' : '0'};
+  overflow: hidden;
   position: relative;
   @media ${props => props.theme.breakpoint} {
     margin: ${props => props.left ? '80px -16px 0 0' : props.right ? '136px 0 0 -16px' : '0 -8px'};
-    padding: ${props => props.left ? '40px 56px 40px 40px' : props.right ? '40px 40px 40px 56px' : '40px'};
+    order: 0;
     width: 100%;
     z-index: ${props => props.left || props.right ? '0' : '10'};
   }
   img {
     display: block;
-    margin: 0 auto 24px;
-    max-width: 80%;
-    @media ${props => props.theme.breakpoint} {
-      max-width: 100%;
-    }
+    height: auto;
+    width: 100%;
   }
   p {
     margin: 0;
     @media ${props => props.theme.breakpoint} {
       font-size: 0.785rem;
+    }
+  }
+  .inner {
+    padding: 24px;
+    @media ${props => props.theme.breakpoint} {
+      padding: ${props => props.left ? '40px 56px 40px 40px' : props.right ? '40px 40px 40px 56px' : '40px'};
     }
   }
 `
@@ -48,19 +52,25 @@ const ServicesContainer = styled.div`
 const Services = props => 
   <ServicesContainer>
     <ServicesCard left>
-      <img src={frontend} />
-      <h3>Front-end Development</h3>
-      <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas faucibus mollis interdum. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+      <img src="https://unsplash.it/800/600" />
+      <div className="inner">
+        <h3>Front-end Development</h3>
+        <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas faucibus mollis interdum. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+      </div>
     </ServicesCard>
     <ServicesCard>
-      <img src={uxui} />
-      <h3>UX/UI Design</h3>
-      <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas faucibus mollis interdum. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+      <img src="https://unsplash.it/800/600" />
+      <div className="inner">
+        <h3>UX/UI Design</h3>
+        <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas faucibus mollis interdum. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+      </div>
     </ServicesCard>
     <ServicesCard right>
-      <img src={management} />
-      <h3>Project Management</h3>
-      <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas faucibus mollis interdum. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+      <img src="https://unsplash.it/800/600" />
+      <div className="inner">
+        <h3>Project Management</h3>
+        <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas faucibus mollis interdum. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+      </div>
     </ServicesCard>
   </ServicesContainer>
 
