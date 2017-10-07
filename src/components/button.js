@@ -5,13 +5,9 @@ import settings from '../lib/settings'
 
 const ButtonIcon = styled.svg`
   fill: ${props => props.inverted ? settings.colors.black : 'white'};
-  height: 16px;
+  height: 20px;
   margin-right: 8px;
-  width: 16px;
-  @media ${settings.breakpoint} {
-    height: 24px;
-    width: 24px;
-  }
+  width: 20px;
 `
 
 const ButtonStyles = styled.a`
