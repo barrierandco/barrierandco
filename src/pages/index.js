@@ -4,6 +4,8 @@ import styled from 'styled-components'
 
 import CallToAction from '../components/cta'
 import Cell from '../components/cell'
+import Clarification from '../components/clarification'
+import Download from '../components/download'
 import Footer from '../components/footer'
 import Letter from '../components/letter'
 import Logo from '../components/logo'
@@ -41,18 +43,10 @@ const IndexPage = props =>
       <Cell>
         <Quote />
       </Cell>
-      <CallToAction expanded />
+      <Download />
     </Row>
     <Row>
-      <Cell>
-        <h2 style={{marginTop: "200px"}}>Still not sure? Let me help by clarifying some things...</h2>
-        <ul>
-          <li>If you are looking for a project to be done yesterday, then I’m probably not your guy.</li>
-          <li>If your project is simply patching up some leaks, there a good change I won’t be able to really help you overcome your specific roadblocks.</li>
-          <li>If you don’t care for the latest technologies and making a site that’s performant and designed for the end user, then I don’t want to waste your money.</li>
-        </ul>
-        <strong>Otherwise… let’s get to work overcoming your roadblocks and making your dreams become a reality.</strong>
-      </Cell>
+      <Clarification />
       <CallToAction expanded />
     </Row>
     <Footer />

@@ -6,6 +6,8 @@ module.exports = {
     black: '#333333',
     blue: '#3986ff',
     light: '#eaeaea',
+    pink: '#ea4c89',
     red: '#e40c05',
+    yellow: '#f3d344',
   },
 };

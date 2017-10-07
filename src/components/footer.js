@@ -6,9 +6,12 @@ import Logo from './logo'
 const FooterContainer = styled.footer`
   color: white;
   font-family: 'Roboto', 'Helvetica Neue', Helvetica, sans-serif;
-  margin: 280px auto 56px;
+  margin: 80px auto 24px;
   max-width: 990px;
   text-align: center;
+  @media ${props => props.theme.breakpoint} {
+    margin: 280px auto 56px;
+  }
   small {
     opacity: 0.5;
   }

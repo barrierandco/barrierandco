@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import fitbot from '../assets/images/proof-fitbot.png'
 import mideo from '../assets/images/proof-mideo.png'
 
+import Button from './button'
 import Cell from './cell'
 
 const ProofContainer = styled.div`
@@ -12,12 +13,25 @@ const ProofContainer = styled.div`
   }
 `
 
+const ProofDribbble = styled.div`
+  margin-top: 24px;
+  text-align: center;
+  @media ${props => props.theme.breakpoint} {
+    margin-top: 40px;
+  }
+`
+
 const ProofImage = styled.figure`
+  border-radius: ${props => props.theme.borderRadius};
+  box-shadow: ${props => props.theme.boxShadow};
   margin: 24px 0;
+  overflow: hidden;
   position: relative;
   @media ${props => props.theme.breakpoint} {
+    box-shadow: none;
     float: left;
     margin: ${props => props.left ? '40px -10% 0 0' : '120px 0 0 0'};
+    overflow: visible;
     width: 55%;
   }
   &:hover {
@@ -27,20 +41,29 @@ const ProofImage = styled.figure`
     color: inherit;
   }
   figcaption {
-    margin-top: 16px;
+    background: white;
+    padding: 16px 24px;
+    @media ${props => props.theme.breakpoint} {
+      background: none;
+      margin-top: 16px;
+      padding: 0;
+    }
   }
   img {
-    border-radius: ${props => props.theme.borderRadius};
-    box-shadow: ${props => props.theme.boxShadow};
     display: block;
     width: 100%;
+    @media ${props => props.theme.breakpoint} {
+      border-radius: ${props => props.theme.borderRadius};
+      box-shadow: ${props => props.theme.boxShadow};
+    }
   }
   p {
-    margin-bottom: 8px;
+    margin-bottom: 0;
   }
   small {
     font-family: 'Roboto', 'Helvetica Neue', Helvetica, sans-serif;
-    opacity: 0.5;
+    font-size: 0.85rem;
+    opacity: 0.6;
     @media ${props => props.theme.breakpoint} {
       font-size: 0.6rem;
     }
@@ -85,6 +108,9 @@ const Proof = props =>
         </figcaption>
       </ProofImage>
     </ProofGallery>
+    <ProofDribbble>
+      <Button href="https://dribbble.com/jhnwlsn" dribbble>See more on Dribbble</Button>
+    </ProofDribbble>
   </ProofContainer>
 
 export default Proof

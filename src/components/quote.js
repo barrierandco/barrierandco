@@ -20,7 +20,7 @@ const QuoteCitation = styled.div`
 `
 
 const QuoteContent = styled.blockquote`
-  margin-bottom: 32px;
+  margin: 32px 0;
 `
 
 const QuotePicture = styled.img`
