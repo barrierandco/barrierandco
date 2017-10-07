@@ -10,20 +10,26 @@ const CtaCell = styled.div`
   line-height: 1.3;
   margin: ${props => props.expanded ? '16px 0 0' : '0'};
   max-width: 432px;
-  padding: 40px;
+  padding: 24px;
   text-align: center;
   width: 100%;
   @media ${props => props.theme.breakpoint} {
     margin: ${props => props.expanded ? '0 0 0 40px' : '0 auto'};
+    padding: 40px;
   }
   hr {
     border: none;
     border-top: 1px solid ${props => props.theme.colors.light};
-    margin: 8px 0 32px;
+    margin: 0 0 24px;
+    @media ${props => props.theme.breakpoint} {
+      margin: 8px 0 32px;
+    }
   }
   p {
-    font-size: 0.875rem;
     margin-bottom: 0;
+    @media ${props => props.theme.breakpoint} {
+      font-size: 0.875rem;
+    }
   }
   strong {
     display: block;

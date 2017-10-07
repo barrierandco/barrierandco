@@ -10,16 +10,22 @@ const ServicesCard = styled.div`
   box-shadow: ${props => props.theme.boxShadow};
   flex-grow: ${props => props.left || props.right ? '0' : '1'};
   margin-bottom: 24px;
-  padding: 40px;
+  padding: 24px;
   position: relative;
   @media ${props => props.theme.breakpoint} {
     margin: ${props => props.left ? '80px -16px 0 0' : props.right ? '136px 0 0 -16px' : '0 -8px'};
     padding: ${props => props.left ? '40px 56px 40px 40px' : props.right ? '40px 40px 40px 56px' : '40px'};
+    padding: 40px;
     width: 100%;
     z-index: ${props => props.left || props.right ? '0' : '10'};
   }
   img {
-    margin-bottom: 16px;
+    display: block;
+    margin: 0 auto 24px;
+    max-width: 80%;
+    @media ${props => props.theme.breakpoint} {
+      max-width: 100%;
+    }
   }
   p {
     margin: 0;

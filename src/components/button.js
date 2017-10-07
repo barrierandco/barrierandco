@@ -9,11 +9,13 @@ const ButtonStyles = styled.a`
   color: white;
   display: inline-block;
   font-family: 'Roboto', 'Helvetica Neue', Helvetica, sans-serif;
-  font-size: 0.875rem;
   margin-bottom: 24px;
   padding: 14px 32px;
   text-align: center;
   text-decoration: none;
+  @media ${settings.breakpoint} {
+    font-size: 0.875rem;
+  }
 `
 
 class Button extends React.Component {
