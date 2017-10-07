@@ -29,7 +29,7 @@ const QuoteContent = styled.blockquote`
   margin: 16px auto;
   padding: 40px 0 0;
   @media ${props => props.theme.breakpoint} {
-    padding: 56px 56px 0;
+    padding: 56px 96px 0;
     text-align: center;
   }
 `
