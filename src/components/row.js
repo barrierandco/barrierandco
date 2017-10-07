@@ -5,8 +5,8 @@ import styled from 'styled-components'
 const RowStyle = styled.div`
   background: linear-gradient(to bottom, white, #f2f2f2);
   box-shadow: rgba(0, 0, 0, 0.15) 0 20px 50px 0;
-  padding: 50px 20px;
-  @media screen and (min-width: 600px) {
+  padding: 40px 20px;
+  @media ${props => props.theme.breakpoint} {
     padding: 100px 20px;
   }
   .inner {

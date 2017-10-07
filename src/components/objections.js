@@ -4,12 +4,20 @@ import logos from '../assets/images/service-logos.svg';
 
 const ObjectionsContainer = styled.div`
   display: flex;
-  flex-flow: row nowrap;
-  margin-top: 80px;
+  flex-flow: column nowrap;
+  margin-top: 40px;
+  @media ${props => props.theme.breakpoint} {
+    flex-direction: row;
+    margin-top: 80px;
+  }
   .column {
     width: 100%;
     &:first-of-type {
+      margin-bottom: 24px;
       margin-right: 40px;
+      @media ${props => props.theme.breakpoint} {
+        margin-bottom: 0;
+      }
     }
   }
 `
@@ -17,9 +25,12 @@ const ObjectionsContainer = styled.div`
 const ObjectionsLogos = styled.img`
   display: block;
   height: auto;
-  margin: 48px auto 0;
+  margin: 24px auto 0;
   max-width: 650px;
   width: 100%;
+  @media ${props => props.theme.breakpoint} {
+    margin: 48px auto 0;
+  }
 `
 
 const Objections = props =>

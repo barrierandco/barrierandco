@@ -9,25 +9,35 @@ const ServicesCard = styled.div`
   border-radius: ${props => props.theme.borderRadius};
   box-shadow: ${props => props.theme.boxShadow};
   flex-grow: ${props => props.left || props.right ? '0' : '1'};
-  margin: ${props => props.left ? '80px -16px 0 0' : props.right ? '136px 0 0 -16px' : '0 -8px'};
-  padding: ${props => props.left ? '40px 56px 40px 40px' : props.right ? '40px 40px 40px 56px' : '40px'};
+  margin-bottom: 24px;
+  padding: 40px;
   position: relative;
-  width: 100%;
-  z-index: ${props => props.left || props.right ? '0' : '10'};
+  @media ${props => props.theme.breakpoint} {
+    margin: ${props => props.left ? '80px -16px 0 0' : props.right ? '136px 0 0 -16px' : '0 -8px'};
+    padding: ${props => props.left ? '40px 56px 40px 40px' : props.right ? '40px 40px 40px 56px' : '40px'};
+    width: 100%;
+    z-index: ${props => props.left || props.right ? '0' : '10'};
+  }
   img {
     margin-bottom: 16px;
   }
   p {
-    font-size: 0.785rem;
     margin: 0;
+    @media ${props => props.theme.breakpoint} {
+      font-size: 0.785rem;
+    }
   }
 `
 
 const ServicesContainer = styled.div`
   align-items: flex-start;
   display: flex;
-  flex-flow: row nowrap;
-  margin: 80px 0 40px;
+  flex-flow: column nowrap;
+  margin: 40px 0;
+  @media ${props => props.theme.breakpoint} {
+    flex-direction: row;
+    margin: 80px 0 40px;
+  }
 `
 
 const Services = props => 

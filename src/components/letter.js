@@ -4,7 +4,10 @@ import portrait from '../assets/images/jw-portrait.png'
 import signature from '../assets/images/jw-signature.png'
 
 const Container = styled.div`
-  margin-top: 80px;
+  margin-top: 40px;
+  @media ${props => props.theme.breakpoint} {
+    margin-top: 80px;
+  }
   &::after {
     clear: both;
     content: '';
@@ -14,12 +17,19 @@ const Container = styled.div`
 
 const LetterContainer = styled.div`
   background: white;
-  border-radius: ${props => props.theme.borderRadius};
-  box-shadow: ${props => props.theme.boxShadow};
-  float: right;
-  margin-top: 80px;
-  padding: 40px;
-  width: 65.5%;
+  font-style: italic;
+  margin: 0 -20px 0;
+  padding: 20px;
+  position: relative;
+  z-index: 10;
+  @media ${props => props.theme.breakpoint} {
+    border-radius: ${props => props.theme.borderRadius};
+    box-shadow: ${props => props.theme.boxShadow};
+    float: right;
+    margin: 80px 0 0;
+    padding: 40px;
+    width: 70%;
+  }
   hr {
     border: none;
     border-top: 1px solid ${props => props.theme.colors.light};
@@ -31,14 +41,22 @@ const LetterContainer = styled.div`
 `
 
 const LetterImage = styled.figure`
-  float: left;
-  margin-right: -30%;
-  width: 37.5%;
+  display: block;
+  margin: 0 0 -160px;
+  @media ${props => props.theme.breakpoint} {
+    float: left;
+    margin: 0 -30% 0 0;
+    width: 37.5%;
+  }
   a {
     color: inherit;
   }
   figcaption {
-    margin-top: 16px;
+    display: none;
+    @media ${props => props.theme.breakpoint} {
+      margin-top: 16px;
+      display: block;
+    }
   }
   img {
     border-radius: ${props => props.theme.borderRadius};

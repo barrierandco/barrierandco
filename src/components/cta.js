@@ -8,10 +8,14 @@ const CtaCell = styled.div`
   border-radius: 5px;
   flex-shrink: 0;
   line-height: 1.3;
-  margin: ${props => props.expanded ? '0 0 0 40px' : '0 auto'};
+  margin: ${props => props.expanded ? '16px 0 0' : '0'};
   max-width: 432px;
   padding: 40px;
   text-align: center;
+  width: 100%;
+  @media ${props => props.theme.breakpoint} {
+    margin: ${props => props.expanded ? '0 0 0 40px' : '0 auto'};
+  }
   hr {
     border: none;
     border-top: 1px solid ${props => props.theme.colors.light};
@@ -33,11 +37,16 @@ const CtaContainer = styled.div`
   border-radius: ${props => props.theme.borderRadius};
   box-shadow: ${props => props.theme.boxShadow};
   display: flex;
-  flex-flow: row nowrap;
-  margin: 80px 0 -296px;
-  padding: 56px;
+  flex-flow: column nowrap;
+  margin: 40px 0 -80px;
+  padding: 32px;
   position: relative;
   z-index: 10;
+  @media ${props => props.theme.breakpoint} {
+    flex-direction: row;
+    margin: 80px 0 -296px;
+    padding: 56px;
+  }
 `
 
 class CallToAction extends React.Component {
