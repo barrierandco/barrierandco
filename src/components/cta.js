@@ -10,7 +10,7 @@ const CtaCell = styled.div`
   line-height: 1.3;
   margin: ${props => props.expanded ? '16px 0 0' : '0'};
   max-width: 432px;
-  padding: 24px;
+  padding: 24px 16px;
   text-align: center;
   width: 100%;
   @media ${props => props.theme.breakpoint} {
@@ -66,7 +66,13 @@ class CallToAction extends React.Component {
           </div>
         }
         <CtaCell expanded={this.props.expanded}>
-          <strong>Schedule a FREE 15 minute consultation time directly into my calendar.</strong>
+          <strong>
+            Schedule a&nbsp;
+            { !this.props.expanded &&
+              "FREE 15 minute consultation "
+            }
+            time directly into my&nbsp;calendar.
+          </strong>
           <Button href="https://calendly.com/jhnwlsn/15min" target="_blank">Schedule a Consultation</Button>
           <hr />
           <p>Rather just write to me? Shoot me an email anytime at <a href="mailto:john@barrierandco.com">john@barrierandco.com</a></p>

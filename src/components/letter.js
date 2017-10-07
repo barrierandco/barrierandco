@@ -4,7 +4,7 @@ import portrait from '../assets/images/jw-portrait.png'
 import signature from '../assets/images/jw-signature.png'
 
 const Container = styled.div`
-  margin-top: 40px;
+  margin-top: 56px;
   @media ${props => props.theme.breakpoint} {
     margin-top: 80px;
   }
@@ -17,14 +17,15 @@ const Container = styled.div`
 
 const LetterContainer = styled.div`
   background: white;
+  border-radius: 0 0 ${props => props.theme.borderRadius} ${props => props.theme.borderRadius};
+  box-shadow: ${props => props.theme.boxShadow};
   font-style: italic;
-  margin: 0 -20px 0;
+  margin: 0;
   padding: 20px;
   position: relative;
   z-index: 10;
   @media ${props => props.theme.breakpoint} {
     border-radius: ${props => props.theme.borderRadius};
-    box-shadow: ${props => props.theme.boxShadow};
     float: right;
     margin: 80px 0 0;
     padding: 40px;
@@ -36,26 +37,45 @@ const LetterContainer = styled.div`
     margin: 32px 0;
   }
   img {
-    width: 110px;
+    width: 80px;
+    @media ${props => props.theme.breakpoint} {
+      width: 110px;
+    }
   }
 `
 
 const LetterImage = styled.figure`
   display: block;
-  margin: 0 0 -160px;
+  height: 350px;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
   @media ${props => props.theme.breakpoint} {
     float: left;
+    height: auto;
     margin: 0 -30% 0 0;
+    overflow: visible;
     width: 37.5%;
   }
   a {
     color: inherit;
   }
   figcaption {
-    display: none;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75) 80%);
+    bottom: 0;
+    color: white;
+    left: 0;
+    padding: 40px 20px 8px;
+    position: absolute;
+    right: 0;
     @media ${props => props.theme.breakpoint} {
+      background: none;
+      color: inherit;
       margin-top: 16px;
-      display: block;
+      padding: 0;
+      position: relative;
+      width: 75%;
     }
   }
   img {
@@ -68,8 +88,11 @@ const LetterImage = styled.figure`
   }
   small {
     font-family: 'Roboto', 'Helvetica Neue', Helvetica, sans-serif;
-    font-size: 0.6rem;
-    opacity: 0.5;
+    font-size: 0.7rem;
+    @media ${props => props.theme.breakpoint} {
+      font-size: 0.6rem;
+      opacity: 0.5;
+    }
   }
   strong {
     display: block;
@@ -84,7 +107,7 @@ const Letter = props =>
       <figcaption>
         <p>
           <strong>John Wilson</strong>
-          <small>Designer & Developer • Principle of Barrier & Co.</small>
+          <small>Designer & Developer • Principle of Barrier&nbsp;&amp;&nbsp;Co.</small>
         </p>
         <p><small>Photo by <a href="http://www.patrickmichaelchin.com">Patrick Michael Chin</a></small></p>
       </figcaption>
