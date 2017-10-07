@@ -40,9 +40,7 @@ const IndexPage = props =>
     </Row>
     <Row>
       <Proof />
-      <Cell>
-        <Quote />
-      </Cell>
+      <Quote />
       <Download />
     </Row>
     <Row>

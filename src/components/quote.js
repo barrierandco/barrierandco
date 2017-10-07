@@ -7,7 +7,12 @@ const QuoteCitation = styled.div`
   display: flex;
   flex-flow: row nowrap;
   font-family: 'Roboto', 'Helvetica Neue', Helvetica, sans-serif;
-  height: 80px;
+  height: 56px;
+  @media ${props => props.theme.breakpoint} {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
   small {
     margin: 0;
     opacity: 0.65;
@@ -20,14 +25,22 @@ const QuoteCitation = styled.div`
 `
 
 const QuoteContent = styled.blockquote`
-  margin: 32px 0;
+  margin: 32px auto;
+  max-width: 800px;
+  @media ${props => props.theme.breakpoint} {
+    text-align: center;
+  }
 `
 
 const QuotePicture = styled.img`
   border-radius: 50px;
   box-shadow: rgba(0, 0, 0, 0.15) 0 15px 35px 0;
   margin-right: 16px;
-  width: 80px;
+  width: 56px;
+  @media ${props => props.theme.breakpoint} {
+    margin: 0 0 16px;
+    width: 80px;
+  }
 `
 
 const Quote = props =>
