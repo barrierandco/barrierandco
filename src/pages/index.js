@@ -25,7 +25,6 @@ const IndexPage = props =>
         <h1>Your business is more than simply a playground for your next hobby—it’s where your biggest and greatest ideas that will change the world are coming into focus.</h1>
         <p>Finding and trusting a designer or developer to create your MVP and make updates to your product or website isn’t an easy task and shouldn’t be taken lightly. This is your livelyhood we’re talking about here.</p>
       </Cell>
-      {/* <Illustration src="/images/hero-illo.svg" /> */}
       <Letter />
     </Row>
     <Row>
@@ -42,10 +41,11 @@ const IndexPage = props =>
       <Cell>
         <Quote />
       </Cell>
+      <CallToAction expanded />
     </Row>
     <Row>
       <Cell>
-        <h2>Still not sure? Let me help by clarifying some things...</h2>
+        <h2 style={{marginTop: "200px"}}>Still not sure? Let me help by clarifying some things...</h2>
         <ul>
           <li>If you are looking for a project to be done yesterday, then I’m probably not your guy.</li>
           <li>If your project is simply patching up some leaks, there a good change I won’t be able to really help you overcome your specific roadblocks.</li>

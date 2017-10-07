@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import logos from '../assets/images/service-logos.svg';
 
 const ObjectionsContainer = styled.div`
   display: flex;
@@ -33,7 +34,7 @@ const Objections = props =>
         <p>I'm positive that I can, but let me put it this way… if we chat and I’m not certain that your investment will make a profitable return, or I’m not capable of helping you out, I’ll let you know up front. There’s no point in wasting either of our time and your money. In other words, I’ll only help you out if I’m certain that there is a chance for a positive result.</p>
       </div>
     </ObjectionsContainer>
-    <ObjectionsLogos src="/images/service-logos.svg"/>
+    <ObjectionsLogos src={logos} />
   </div>
 
 export default Objections

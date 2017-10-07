@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import profile from '../assets/images/nick-profile.jpg'
 
 const QuoteCitation = styled.div`
   align-items: center;
@@ -36,7 +37,7 @@ const Quote = props =>
       <p>Toss anything at him: his insight into the development process heads off problems before they happen, keeping everything on time, on budget, and on scope. With John, you’ve finally found the right fit.</p>
     </QuoteContent>
     <QuoteCitation>
-      <QuotePicture src="/images/nick-profile.jpg" />
+      <QuotePicture src={profile} />
       <div>
         <strong>Nick Walsh</strong>
         <small>Envy Labs, COO and Design Director</small>
