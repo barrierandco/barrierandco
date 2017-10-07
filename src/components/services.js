@@ -15,7 +15,6 @@ const ServicesCard = styled.div`
   @media ${props => props.theme.breakpoint} {
     margin: ${props => props.left ? '80px -16px 0 0' : props.right ? '136px 0 0 -16px' : '0 -8px'};
     padding: ${props => props.left ? '40px 56px 40px 40px' : props.right ? '40px 40px 40px 56px' : '40px'};
-    padding: 40px;
     width: 100%;
     z-index: ${props => props.left || props.right ? '0' : '10'};
   }

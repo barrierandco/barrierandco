@@ -24,7 +24,7 @@ class Download extends React.Component {
       <DownloadContainer>
         <h2>Identify Your Roadblocks</h2>
         <p>Sometimes we feel stuck, and we don’t know why. If you currently feel that way, I’d love to help you out—no strings attached. Identifying at least one roadblock and the solution will start forward motion, and before you know it you’ll be running full steam ahead once again. To help you identify the roadblocks, here’s a simple one page PDF that will help you think through where you are now and where you want to go.</p>
-        <Button href="#" inverted>Download the PDF</Button>
+        <Button href="#" icon="download" inverted>Download the PDF</Button>
       </DownloadContainer>
     )
   }

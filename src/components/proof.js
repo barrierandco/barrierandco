@@ -9,7 +9,7 @@ import Cell from './cell'
 const ProofContainer = styled.div`
   margin: 40px 0 0;
   @media ${props => props.theme.breakpoint} {
-    margin: 176px 0 80px;
+    margin: 176px 0 40px;
   }
 `
 
@@ -109,7 +109,7 @@ const Proof = props =>
       </ProofImage>
     </ProofGallery>
     <ProofDribbble>
-      <Button href="https://dribbble.com/jhnwlsn" dribbble>See more on Dribbble</Button>
+      <Button href="https://dribbble.com/jhnwlsn" icon="dribbble" dribbble>See more on Dribbble</Button>
     </ProofDribbble>
   </ProofContainer>
 

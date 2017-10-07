@@ -73,7 +73,7 @@ class CallToAction extends React.Component {
             }
             time directly into my&nbsp;calendar.
           </strong>
-          <Button href="https://calendly.com/jhnwlsn/15min" target="_blank">Schedule a Consultation</Button>
+          <Button href="https://calendly.com/jhnwlsn/15min" icon="date" target="_blank">Schedule a Consultation</Button>
           <hr />
           <p>Rather just write to me? Shoot me an email anytime at <a href="mailto:john@barrierandco.com">john@barrierandco.com</a></p>
         </CtaCell>

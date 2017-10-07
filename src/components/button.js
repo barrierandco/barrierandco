@@ -3,15 +3,27 @@ import styled from 'styled-components'
 
 import settings from '../lib/settings'
 
+const ButtonIcon = styled.svg`
+  fill: ${props => props.inverted ? settings.colors.black : 'white'};
+  height: 16px;
+  margin-right: 8px;
+  width: 16px;
+  @media ${settings.breakpoint} {
+    height: 24px;
+    width: 24px;
+  }
+`
+
 const ButtonStyles = styled.a`
+  align-items: center;
   background: ${props => props.inverted ? 'white' : props.dribbble ? settings.colors.pink : settings.colors.blue};
   border-radius: 4px;
   color: ${props => props.inverted ? settings.colors.black : 'white'};
-  display: inline-block;
+  display: inline-flex;
   font-family: 'Roboto', 'Helvetica Neue', Helvetica, sans-serif;
+  justify-content: center;
   margin-bottom: ${props => props.inverted ? '0' : '24px'};
   padding: 14px 32px;
-  text-align: center;
   text-decoration: none;
   width: 100%;
   @media ${settings.breakpoint} {
@@ -25,6 +37,11 @@ class Button extends React.Component {
   render() {
     return (
       <ButtonStyles {...this.props}>
+        {this.props.icon &&
+          <ButtonIcon {...this.props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <use xlinkHref={`#${this.props.icon}`} />
+          </ButtonIcon>
+        }
         {this.props.children}
       </ButtonStyles>
     )
