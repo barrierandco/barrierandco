@@ -46,7 +46,6 @@ const ServicesContainer = styled.div`
   margin: 40px 0;
   @media ${props => props.theme.breakpoint} {
     flex-direction: row;
-    margin: 80px 0 40px;
   }
 `
 
