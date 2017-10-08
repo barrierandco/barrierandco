@@ -6,15 +6,15 @@ import Button from './button'
 const CtaCell = styled.div`
   border: 1px solid ${props => props.theme.colors.light};
   border-radius: 5px;
-  flex-shrink: 0;
   line-height: 1.3;
   margin: ${props => props.expanded ? '16px 0 0' : '0'};
   max-width: 432px;
-  padding: 24px 16px;
+  padding: 24px;
   text-align: center;
   width: 100%;
   @media ${props => props.theme.breakpoint} {
     margin: ${props => props.expanded ? '0 0 0 40px' : '0 auto'};
+    max-width: 432px;
     padding: 40px;
   }
   hr {
@@ -55,21 +55,25 @@ const CtaContainer = styled.div`
   }
 `
 
+const CtaContent = styled.div`
+  display: ${props => props.expanded ? 'block' : 'none'};
+  margin-right: 40px;
+  max-width: 450px;
+`
+
 class CallToAction extends React.Component {
   render() {
     return (
       <CtaContainer>
-        { this.props.expanded &&
-          <div>
-            <h2>Get a free 15 minute consultation</h2>
-            <p>Sed posuere consectetur est at lobortis. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
-          </div>
-        }
-        <CtaCell expanded={this.props.expanded}>
+        <CtaContent expanded={this.props.expanded}>
+          <h2>Get a free 15 minute consultation</h2>
+          <p>Sed posuere consectetur est at lobortis. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
+        </CtaContent>
+        <CtaCell>
           <strong>
             Schedule a&nbsp;
             { !this.props.expanded &&
-              "FREE 15 minute consultation "
+              "free 15 minute consultation "
             }
             time directly into my&nbsp;calendar.
           </strong>

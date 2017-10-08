@@ -33,7 +33,7 @@ const ServicesCard = styled.div`
   .inner {
     padding: 24px;
     @media ${props => props.theme.breakpoint} {
-      padding: ${props => props.left ? '40px 56px 40px 40px' : props.right ? '40px 40px 40px 56px' : '40px'};
+      padding: ${props => props.left ? '32px 56px 40px 40px' : props.right ? '32px 40px 40px 56px' : '32px 40px 40px'};
     }
   }
 `

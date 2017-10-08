@@ -86,7 +86,7 @@ const Proof = props =>
   <ProofContainer>
     <Cell>
       <h2>Need proof of completed projects, not just blueprints?</h2>
-      <p>Having completed over 30 individual client’s projects, I’ve experienced a wide array of project types, styles and purposes. Here are some samples of the work I am most proud to show you. <strong>A personal goal of mine is to do my job so well that I put myself out of business.</strong> This means that I want to get you set up so that you can hire your own team and continue growing without needing to keep expensive consultancies on retainer as your dream becomes reality.</p>
+      <p>Having completed over three dozen individual projects, I’ve experienced a wide array of project types, styles and purposes. Here are some samples of the work I am most proud to show you. <strong>A personal goal of mine is to do my job so well that I put myself out of business.</strong> This means that I want to get you set up so that you can hire your own team and continue growing without needing to keep expensive consultancies on retainer as your dream becomes reality.</p>
     </Cell>
     <ProofGallery>
       <ProofImage left>
