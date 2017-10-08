@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+
 import frontend from '../assets/images/service-frontend.svg'
 import management from '../assets/images/service-management.svg'
 import uxui from '../assets/images/service-uxui.svg'
@@ -52,21 +53,21 @@ const ServicesContainer = styled.div`
 const Services = props => 
   <ServicesContainer>
     <ServicesCard left>
-      <img src="https://unsplash.it/800/600" />
+      <img src={frontend} />
       <div className="inner">
         <h3>Front-end Development</h3>
         <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas faucibus mollis interdum. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
       </div>
     </ServicesCard>
     <ServicesCard>
-      <img src="https://unsplash.it/800/600" />
+      <img src={uxui} />
       <div className="inner">
         <h3>UX/UI Design</h3>
         <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas faucibus mollis interdum. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
       </div>
     </ServicesCard>
     <ServicesCard right>
-      <img src="https://unsplash.it/800/600" />
+      <img src={management} />
       <div className="inner">
         <h3>Project Management</h3>
         <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas faucibus mollis interdum. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
