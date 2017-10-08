@@ -41,6 +41,7 @@ const QuotePicture = styled.img`
   width: 56px;
   @media ${props => props.theme.breakpoint} {
     margin: 0 0 16px;
+    transform: scale(-1, 1);
     width: 80px;
   }
 `
