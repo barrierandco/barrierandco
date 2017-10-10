@@ -4,16 +4,20 @@ import styled from 'styled-components'
 import Logo from './logo'
 
 const FooterContainer = styled.footer`
-  color: white;
-  font-family: 'Roboto', 'Helvetica Neue', Helvetica, sans-serif;
-  margin: 80px auto 24px;
-  max-width: 990px;
-  text-align: center;
+  background: ${props => props.theme.colors.black};
+  padding: 80px 0 24px;
   @media ${props => props.theme.breakpoint} {
-    margin: 280px auto 56px;
+    padding: 280px 0 56px;
   }
   small {
     opacity: 0.5;
+  }
+  .inner {
+    color: white;
+    font-family: 'Roboto', 'Helvetica Neue', Helvetica, sans-serif;
+    margin: 0 auto;
+    max-width: 990px;
+    text-align: center;
   }
 `
 
@@ -33,13 +37,15 @@ const FooterLinks = styled.ul`
 
 const Footer = props =>
   <FooterContainer>
-    <Logo inverted />
-    <FooterLinks>
-      <li><a href="https://dribbble.com/barrierandco">Dribbble</a></li>
-      <li><a href="https://medium.com/barrierandco">Medium</a></li>
-      <li><a href="#">Contact</a></li>
-    </FooterLinks>
-    <small>&copy; 2017 John Wilson. All rights reserved.</small>
+    <div className="inner">
+      <Logo inverted />
+      <FooterLinks>
+        <li><a href="https://dribbble.com/barrierandco">Dribbble</a></li>
+        <li><a href="https://medium.com/barrierandco">Medium</a></li>
+        <li><a href="#">Contact</a></li>
+      </FooterLinks>
+      <small>&copy; 2017 John Wilson. All rights reserved.</small>
+    </div>
   </FooterContainer>
 
 export default Footer
