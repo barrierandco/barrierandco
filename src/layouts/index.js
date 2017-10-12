@@ -28,7 +28,7 @@ const TemplateWrapper = ({ children }) => (
         { name: "twitter:image:src", content: "http://barrierandco.com/static/meta-image.png"},
         // Open Graph
         { property: "og:title", content: "Barrier & Co."},
-        { property: "og:type", content: ""},
+        { property: "og:type", content: "website"},
         { property: "og:url", content: "http://barrierandco.com"},
         { property: "og:image", content: "http://barrierandco.com/static/meta-image.png"},
         { property: "og:description", content: "arrier & Company exists to create a solution for some of today's greatest technological problems so that other people can enjoy the fullness of life itself."},
