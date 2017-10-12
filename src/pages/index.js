@@ -15,10 +15,6 @@ import Quote from '../components/quote'
 import Row from '../components/row'
 import Services from '../components/services'
 
-const Illustration = styled.img`
-  margin: 24px 0 80px;
-`
-
 const IndexPage = props =>
   <div>
     <Row>

@@ -93,7 +93,7 @@ const Proof = props =>
     </Cell>
     <ProofGallery>
       <ProofImage left>
-        <img src={fitbot} />
+        <img src={fitbot} alt="sample image of the fitbot ios design project" />
         <figcaption>
           <p>
             <strong>Fitbot iOS App</strong>
@@ -102,7 +102,7 @@ const Proof = props =>
         </figcaption>
       </ProofImage>
       <ProofImage right>
-        <img src={mideo} />
+        <img src={mideo} alt="sample image of the mideo web application design and development project" />
         <figcaption>
           <p>
             <strong>Mideo Web Application</strong>

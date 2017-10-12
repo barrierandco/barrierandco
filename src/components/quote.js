@@ -53,7 +53,7 @@ const Quote = props =>
       <p>Toss anything at him: his insight into the development process heads off problems before they happen, keeping everything on time, on budget, and on scope. With John, you’ve finally found the&nbsp;right&nbsp;fit.</p>
     </QuoteContent>
     <QuoteCitation>
-      <QuotePicture src={profile} />
+      <QuotePicture src={profile} alt="profile image of Nick Walsh looking to the bottom left corner" />
       <div>
         <strong>Nick&nbsp;Walsh</strong>
         <small>Envy&nbsp;Labs, COO and Design&nbsp;Director</small>

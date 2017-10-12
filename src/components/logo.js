@@ -28,7 +28,7 @@ const LogoStyle = styled.div`
 
 const Logo = props => (
   <LogoStyle inverted={props.inverted}>
-    { !props.inverted && <LogoIcon src={LogoImage} /> }
+    { !props.inverted && <LogoIcon src={LogoImage} alt="logo mark for barrier and company stylized to be similar to a pair of glasses" /> }
     Barrier&nbsp;&amp;&nbsp;Co.
   </LogoStyle>
 )
