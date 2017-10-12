@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import PDF from '../assets/downloads/define-your-roadblocks-2017.pdf'
+
 import Button from './button'
 
 const DownloadContainer = styled.div`
@@ -22,9 +24,9 @@ class Download extends React.Component {
   render() {
     return (
       <DownloadContainer>
-        <h2>Identify Your Roadblocks</h2>
-        <p>Sometimes we feel stuck, and we don’t know why. If you currently feel that way, I’d love to help you out—no strings attached. Identifying at least one roadblock and the solution will start forward motion, and before you know it you’ll be running full steam ahead once again. To help you identify the roadblocks, here’s a simple one page PDF that will help you think through where you are now and where you want to go.</p>
-        <Button href="#" icon="download" inverted>Download the PDF</Button>
+        <h2>Define Your Roadblocks</h2>
+        <p>Defining a roadblock is more than simply knowing what’s keeping you from moving forward with your dream. To define every aspect of your roadblock and what you want the future to look like is the key to unlocking the solution and moving your company forward once again. I’d love to help you fully define your roadblock—no strings attached—so that you can continue to move your business forward.</p>
+        <Button href={PDF} icon="download" inverted>Download the PDF</Button>
       </DownloadContainer>
     )
   }
