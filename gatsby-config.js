@@ -3,5 +3,13 @@ module.exports = {
     title: `Gatsby Default Starter`,
   },
   pathPrefix: `/`,
-  plugins: [`gatsby-plugin-react-helmet`],
+  plugins: [
+    `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-106737528-1',
+      },
+    },
+  ],
 }
