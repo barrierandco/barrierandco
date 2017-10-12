@@ -31,7 +31,9 @@ const TemplateWrapper = ({ children }) => (
         { property: "og:type", content: "website"},
         { property: "og:url", content: "http://barrierandco.com"},
         { property: "og:image", content: "http://barrierandco.com/static/meta-image.png"},
-        { property: "og:description", content: "arrier & Company exists to create a solution for some of today's greatest technological problems so that other people can enjoy the fullness of life itself."},
+        { property: "og:image:height", content: "150"},
+        { property: "og:image:width", content: "280"},
+        { property: "og:description", content: "Barrier & Company exists to create a solution for some of today's greatest technological problems so that other people can enjoy the fullness of life itself."},
         { property: "og:site_name", content: "Barrier & Co."}
       ]}
     />
