@@ -47,6 +47,7 @@ const ProofImage = styled.figure`
       background: none;
       margin-top: 16px;
       padding: 0;
+      width: ${props => props.left ? '75%' : '100%'};
     }
   }
   img {
@@ -58,6 +59,7 @@ const ProofImage = styled.figure`
     }
   }
   p {
+    line-height: 1.1;
     margin-bottom: 0;
   }
   small {
@@ -71,6 +73,7 @@ const ProofImage = styled.figure`
   strong {
     display: block;
     line-height: 1;
+    margin-bottom: 8px;
   }
 `
 
@@ -85,16 +88,16 @@ const ProofGallery = styled.div`
 const Proof = props =>
   <ProofContainer>
     <Cell>
-      <h2>Need proof of completed projects, not just blueprints?</h2>
-      <p>Having completed over three dozen individual projects, I’ve experienced a wide array of project types, styles and purposes. Here are some samples of the work I am most proud to show you. <strong>A personal goal of mine is to do my job so well that I put myself out of business.</strong> This means that I want to get you set up so that you can hire your own team and continue growing without needing to keep expensive consultancies on retainer as your dream becomes reality.</p>
+      <h2>Need proof of completed projects, not&nbsp;just&nbsp;blueprints?</h2>
+      <p>Having completed over three dozen individual projects, I’ve experienced a wide array of project types, styles and purposes. Here are some samples of the work I am most proud to show you. <strong>A personal goal of mine is to do my job so well that I put myself out of business.</strong> This means that I want to get you set up so that you can hire your own team and continue growing without needing to keep expensive consultancies on retainer as your dream&nbsp;becomes&nbsp;reality.</p>
     </Cell>
     <ProofGallery>
       <ProofImage left>
         <img src={fitbot} />
         <figcaption>
           <p>
-            <strong>John Wilson</strong>
-            <small>Designer & Developer • Principle of Barrier & Co.</small>
+            <strong>Fitbot iOS App</strong>
+            <small><a href="https://thefitbot.com">Fitbot</a> needed a better way for clients to communicate with their coaches. To resolve this roadblock, I designed an iOS app that prioritized communication throughout the entire experience.</small>
           </p>
         </figcaption>
       </ProofImage>
@@ -102,8 +105,8 @@ const Proof = props =>
         <img src={mideo} />
         <figcaption>
           <p>
-            <strong>John Wilson</strong>
-            <small>Designer & Developer • Principle of Barrier & Co.</small>
+            <strong>Mideo Web Application</strong>
+            <small>Using React, Redux and Google's Firebase, I designed and developed the entire applicatino for Mideo which allows filmmakers to sample an entire library of songs on their videos <em>before purchasing the songs</em>.</small>
           </p>
         </figcaption>
       </ProofImage>

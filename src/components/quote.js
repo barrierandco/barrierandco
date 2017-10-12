@@ -49,14 +49,14 @@ const QuotePicture = styled.img`
 const Quote = props =>
   <div>
     <QuoteContent>
-      <p>A successful project relies on translating goals to pixels and a regimented process, and that’s what puts John in his own league. Trustworthy, affable, and relentless in his pursuit of the right solution, John will wind up caring just as much about your project as you do.</p>
-      <p>Toss anything at him: his insight into the development process heads off problems before they happen, keeping everything on time, on budget, and on scope. With John, you’ve finally found the right fit.</p>
+      <p>A successful project relies on translating goals to pixels and a regimented process, and that’s what puts John in his own league. Trustworthy, affable, and relentless in his pursuit of the right solution, John will wind up caring just as much about your project as&nbsp;you&nbsp;do.</p>
+      <p>Toss anything at him: his insight into the development process heads off problems before they happen, keeping everything on time, on budget, and on scope. With John, you’ve finally found the&nbsp;right&nbsp;fit.</p>
     </QuoteContent>
     <QuoteCitation>
       <QuotePicture src={profile} />
       <div>
-        <strong>Nick Walsh</strong>
-        <small>Envy Labs, COO and Design Director</small>
+        <strong>Nick&nbsp;Walsh</strong>
+        <small>Envy&nbsp;Labs, COO and Design&nbsp;Director</small>
       </div>
     </QuoteCitation>
   </div>

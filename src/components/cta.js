@@ -67,7 +67,7 @@ class CallToAction extends React.Component {
       <CtaContainer>
         <CtaContent expanded={this.props.expanded}>
           <h2>Get a free 15 minute consultation</h2>
-          <p>I'm happy to hop on a call with anyone to discuss the details of your dreams, projects or ideas&mdash;at no charge to you. Simply book a time <em>directly into my calendar</em>. Once you book a time, you'll receive a follow up survey that will make our time on the call worth every minute.</p>
+          <p>I'm happy to hop on a call with anyone to discuss the details of your dreams, projects or ideas&mdash;at no charge to you. Simply book a time <em>directly into my calendar</em>. Once you book a time, you'll receive a follow up survey that will make our time on the call worth&nbsp;every&nbsp;minute.</p>
         </CtaContent>
         <CtaCell>
           <strong>

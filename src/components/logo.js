@@ -29,7 +29,7 @@ const LogoStyle = styled.div`
 const Logo = props => (
   <LogoStyle inverted={props.inverted}>
     { !props.inverted && <LogoIcon src={LogoImage} /> }
-    Barrier &amp; Co.
+    Barrier&nbsp;&amp;&nbsp;Co.
   </LogoStyle>
 )
 

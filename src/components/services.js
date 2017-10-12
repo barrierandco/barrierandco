@@ -66,23 +66,23 @@ const Services = props =>
     <ServicesCard left>
       <img src={frontend} />
       <div className="inner">
-        <h3>Web Development</h3>
-        <p>Bringing your dream to reality requires a practical implementation knowledge. Having extensive experience with both front-end and back-end systems, I'm ready to help your business succeed by providing the following services:</p>
+        <h3>Web&nbsp;Development</h3>
+        <p>Bringing your dream to reality requires a practical implementation knowledge. Having extensive experience with both front-end and back-end systems, I'm ready to help your business succeed by providing the&nbsp;following&nbsp;services:</p>
         <ul>
           <li><strong>HTML, CSS &amp; Javascript</strong></li>
-          <li><strong>Sinatra &amp; Ruby on Rails</strong></li>
+          <li><strong>Sinatra &amp; Ruby&nbsp;on&nbsp;Rails</strong></li>
           <li><strong>React &amp; Redux</strong></li>
-          <li><strong>Google's Firebase</strong></li>
+          <li><strong>Google's&nbsp;Firebase</strong></li>
         </ul>
       </div>
     </ServicesCard>
     <ServicesCard>
       <img src={uxui} />
       <div className="inner">
-        <h3>UX/UI Design</h3>
-        <p>Creating a solution for your roadblock requires someone like me who can look towards where you want to go while at the same time keeping an eye on where you are currently. This is done specifically through the following design services:</p>
+        <h3>UX/UI&nbsp;Design</h3>
+        <p>Creating a solution for your roadblock requires someone like me who can look towards where you want to go while at the same time keeping an eye on where you are currently. This is done specifically through the following&nbsp;design&nbsp;services:</p>
         <ul>
-          <li><strong>Information architecture &amp; wireframes</strong></li>
+          <li><strong>Information architecture&nbsp;&amp; wireframes</strong></li>
           <li><strong>Interactive prototyping</strong></li>
           <li><strong>High fidelity mockups</strong></li>
         </ul>
@@ -91,8 +91,8 @@ const Services = props =>
     <ServicesCard right>
       <img src={management} />
       <div className="inner">
-        <h3>Product Management</h3>
-        <p>Some projects need a leader who is aware of every detail of a project and can take a team from concept to reality. While I am effective at doing everything myself, I'm also capable of reaching out to my network to <strong>form and lead a team through the entire product development process</strong>. Doing so helps you with the larger projects that need more power than a single person contracted even fulltime can provide.</p>
+        <h3>Product&nbsp;Management</h3>
+        <p>Some projects need a leader who is aware of every detail of a project and can take a team from concept to reality. While I am effective at doing everything myself, I'm also capable of reaching out to my network to <strong>form and lead a team through the entire product development process</strong>. Doing so helps you with the larger projects that need more power than a single person contracted even fulltime&nbsp;can&nbsp;provide.</p>
       </div>
     </ServicesCard>
   </ServicesContainer>

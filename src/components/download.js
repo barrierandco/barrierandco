@@ -25,7 +25,7 @@ class Download extends React.Component {
     return (
       <DownloadContainer>
         <h2>Define Your Roadblocks</h2>
-        <p>Defining a roadblock is more than simply knowing what’s keeping you from moving forward with your dream. To define every aspect of your roadblock and what you want the future to look like is the key to unlocking the solution and moving your company forward once again. I’d love to help you fully define your roadblock—no strings attached—so that you can continue to move your business forward.</p>
+        <p>Defining a roadblock is more than simply knowing what’s keeping you from moving forward with your dream. To define every aspect of your roadblock and what you want the future to look like is the key to unlocking the solution and moving your company forward once again. I’d love to help you fully define your roadblock—no strings attached—so that you can continue to move your&nbsp;business&nbsp;forward.</p>
         <Button href={PDF} icon="download" inverted>Download the PDF</Button>
       </DownloadContainer>
     )
