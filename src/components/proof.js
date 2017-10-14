@@ -106,7 +106,7 @@ const Proof = props =>
         <figcaption>
           <p>
             <strong>Mideo Web Application</strong>
-            <small>Using React, Redux and Google's Firebase, I designed and developed the entire applicatino for Mideo which allows filmmakers to sample an entire library of songs on their videos <em>before purchasing the songs</em>.</small>
+            <small>Using React, Redux and Google's Firebase, I designed and developed the entire application for Mideo which allows filmmakers to sample an entire library of songs on their videos <em>before purchasing the songs</em>.</small>
           </p>
         </figcaption>
       </ProofImage>

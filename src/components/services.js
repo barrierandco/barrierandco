@@ -67,7 +67,7 @@ const Services = props =>
       <img src={frontend} alt="an absract illustrated image representing front-end development" />
       <div className="inner">
         <h3>Web&nbsp;Development</h3>
-        <p>Bringing your dream to reality requires a practical implementation knowledge. Having extensive experience with both front-end and back-end systems, I'm ready to help your business succeed by providing the&nbsp;following&nbsp;services:</p>
+        <p>Bringing your dream to reality requires practical implementation. Having extensive experience with both front&#8209;end and back&#8209;end systems, I'm ready to help your business succeed by providing the&nbsp;following&nbsp;services:</p>
         <ul>
           <li><strong>HTML, CSS &amp; Javascript</strong></li>
           <li><strong>Sinatra &amp; Ruby&nbsp;on&nbsp;Rails</strong></li>

@@ -41,8 +41,8 @@ const Footer = props =>
       <Logo inverted />
       <FooterLinks>
         <li><a href="https://dribbble.com/barrierandco">Dribbble</a></li>
-        <li><a href="https://medium.com/barrierandco">Medium</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="https://medium.com/@jhnwlsn">Medium</a></li>
+        <li><a href="mailto:john@barrierandco.com">Contact</a></li>
       </FooterLinks>
       <small>&copy; 2017 John Wilson. All rights reserved.</small>
     </div>
