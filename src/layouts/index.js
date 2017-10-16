@@ -12,31 +12,27 @@ import './base.css'
 const TemplateWrapper = ({ children }) => (
   <div>
     <span style={{display: "none"}}><Icons /></span>
-    <Helmet
-      title="Barrier &amp; Co."
-      meta={[
-        { name: 'description', content: "Barrier & Company exists to create a solution for some of today's greatest technological problems so that other people can enjoy the fullness of life itself." },
-        // Schema.org
-        { itemprop: "name", content: "Barrier & Co."},
-        { itemprop: "description", content: "Barrier & Company exists to create a solution for some of today's greatest technological problems so that other people can enjoy the fullness of life itself."},
-        { itemprop: "image", content: "http://barrierandco.com/static/meta-image.png"},
-        // Twitter
-        { name: "twitter:card", content: "summary_large_image"},
-        { name: "twitter:title", content: "Barrier & Co."},
-        { name: "twitter:description", content: "Barrier & Company exists to create a solution for some of today's greatest technological problems so that other people can enjoy the fullness of life itself."},
-        { name: "twitter:creator", content: "@jhnwlsn"},
-        { name: "twitter:image:src", content: "http://barrierandco.com/static/meta-image.png"},
-        // Open Graph
-        { property: "og:title", content: "Barrier & Co."},
-        { property: "og:type", content: "website"},
-        { property: "og:url", content: "http://barrierandco.com"},
-        { property: "og:image", content: "http://barrierandco.com/static/meta-image.png"},
-        { property: "og:image:height", content: "150"},
-        { property: "og:image:width", content: "280"},
-        { property: "og:description", content: "Barrier & Company exists to create a solution for some of today's greatest technological problems so that other people can enjoy the fullness of life itself."},
-        { property: "og:site_name", content: "Barrier & Co."}
-      ]}
-    />
+    <Helmet>
+      <title>Barrier &amp; Co</title>
+      <meta name='description' content="Barrier & Company exists to create a solution for some of today's greatest technological problems so that other people can enjoy the fullness of life itself."  />
+      <meta itemprop="name" content="Barrier & Co." />
+      <meta itemprop="description" content="Barrier & Company exists to create a solution for some of today's greatest technological problems so that other people can enjoy the fullness of life itself." />
+      <meta itemprop="image" content="http://barrierandco.com/static/meta-image.png" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="Barrier & Co." />
+      <meta name="twitter:description" content="Barrier & Company exists to create a solution for some of today's greatest technological problems so that other people can enjoy the fullness of life itself." />
+      <meta name="twitter:creator" content="@jhnwlsn" />
+      <meta name="twitter:image:src" content="http://barrierandco.com/static/meta-image.png" />
+      <meta property="og:title" content="Barrier & Co." />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="http://barrierandco.com" />
+      <meta property="og:image" content="http://barrierandco.com/static/meta-image.png" />
+      <meta property="og:image:height" content="150" />
+      <meta property="og:image:width" content="280" />
+      <meta property="og:description" content="Barrier & Company exists to create a solution for some of today's greatest technological problems so that other people can enjoy the fullness of life itself." />
+      <meta property="og:site_name" content="Barrier & Co." />      
+      <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/3980674.js"></script>
+    </Helmet>
     <ThemeProvider theme={settings}>
       {children()}
     </ThemeProvider>
