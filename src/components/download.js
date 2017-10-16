@@ -14,6 +14,12 @@ const DownloadContainer = styled.div`
   padding: 32px;
   position: relative;
   z-index: 10;
+  h2 {
+    margin-bottom: 16px;
+  }
+  p {
+    margin-bottom: 24px;
+  }
   @media ${props => props.theme.breakpoint} {
     margin: 80px 0 -296px;
     padding: 56px;

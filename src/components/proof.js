@@ -34,9 +34,6 @@ const ProofImage = styled.figure`
     overflow: visible;
     width: 55%;
   }
-  &:hover {
-    z-index: 10;
-  }
   a {
     color: inherit;
   }
