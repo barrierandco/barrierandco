@@ -94,7 +94,7 @@ const Proof = props =>
         <figcaption>
           <p>
             <strong>Fitbot iOS App</strong>
-            <small><a href="https://thefitbot.com">Fitbot</a> needed a better way for clients to communicate with their coaches. To resolve this roadblock, I designed an iOS app that prioritized communication throughout the entire experience.</small>
+            <small><a href="http://bit.ly/2xNNpts">Fitbot</a> needed a better way for clients to communicate with their coaches. To resolve this roadblock, I designed an iOS app that prioritized communication throughout the entire experience.</small>
           </p>
         </figcaption>
       </ProofImage>
@@ -109,7 +109,7 @@ const Proof = props =>
       </ProofImage>
     </ProofGallery>
     <ProofDribbble>
-      <Button href="https://dribbble.com/jhnwlsn" icon="dribbble" dribbble>See more on Dribbble</Button>
+      <Button href="http://bit.ly/2ysGEdB" icon="dribbble" dribbble>See more on Dribbble</Button>
     </ProofDribbble>
   </ProofContainer>
 

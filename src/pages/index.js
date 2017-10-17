@@ -21,7 +21,7 @@ const IndexPage = props =>
       <Logo />
       <Cell center>
         <h1>Your business is more than simply a playground for your next hobby—it’s where your biggest and greatest ideas that will change the world are coming&nbsp;into&nbsp;focus.</h1>
-        <p>Finding and trusting a designer or developer to create your MVP and make updates to your product or website isn’t an easy task and shouldn’t be taken lightly. This is your livelyhood we’re&nbsp;talking&nbsp;about.</p>
+        <p>Finding and trusting a designer or developer to create your MVP and make updates to your product or website isn’t an easy task and shouldn’t be taken lightly. This is your livelihood we’re&nbsp;talking&nbsp;about.</p>
       </Cell>
       <Letter />
     </Row>
